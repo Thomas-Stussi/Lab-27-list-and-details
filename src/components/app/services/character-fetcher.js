@@ -6,7 +6,7 @@ const requestOptions = {
 };
 
 export const fetchCharacters = () => {
-  return fetch('https://last-airbender-api.herokuapp.com/api/v1/characters?perPage=3', requestOptions)
+  return fetch('https://last-airbender-api.herokuapp.com/api/v1/characters?perPage=1000', requestOptions)
     .then(response => response.json())
     .catch(error => console.log('error', error));
 };
